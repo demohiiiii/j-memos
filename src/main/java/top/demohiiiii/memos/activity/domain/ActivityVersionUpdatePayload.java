@@ -1,4 +1,4 @@
-package top.demohiiiii.memos.activity;
+package top.demohiiiii.memos.activity.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ActivityMemoCommentPayload {
-    private Integer memoId;
-    private Integer relatedMemoId;
+public class ActivityVersionUpdatePayload {
+    private Integer version;
 }

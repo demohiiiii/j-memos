@@ -1,4 +1,4 @@
-package top.demohiiiii.memos.activity;
+package top.demohiiiii.memos.activity.domain;
 
 import com.mybatisflex.annotation.Column;
 import com.mybatisflex.annotation.Id;
@@ -31,7 +31,7 @@ public class Activity implements Serializable {
 
     private ActivityType type;
 
-    private ActivityLevelInfo level;
+    private ActivityLevel level;
 
     @Column(typeHandler = JacksonTypeHandler.class)
     private ActivityPayload payload;

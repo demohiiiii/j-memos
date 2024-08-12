@@ -1,6 +1,5 @@
-package top.demohiiiii.memos.workspace;
+package top.demohiiiii.memos.activity.domain;
 
-import com.mybatisflex.annotation.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,16 +12,10 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(value = "system_setting")
-public class WorkspaceSetting implements Serializable {
-
+public class ActivityPayload implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    private String name;
-
-    private String value;
-
-    private String description;
-
+    private ActivityMemoCommentPayload memoComment;
+    private ActivityVersionUpdatePayload versionUpdate;
 }
