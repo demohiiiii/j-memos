@@ -1,12 +1,14 @@
-package top.demohiiiii.memos.user;
+package top.demohiiiii.memos.user.domain;
 
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.Table;
+import io.github.linpeilie.annotations.AutoMapper;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import top.demohiiiii.memos.common.RowStatus;
+import top.demohiiiii.memos.user.service.UserDto;
 
 import java.io.Serial;
 import java.io.Serializable;

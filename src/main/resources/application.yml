@@ -5,10 +5,12 @@ spring:
     url: jdbc:sqlite:db/memos.db
   flyway:
     enabled: true
-    locations: classpath:db/sqlite/migration
+    locations: classpath:db/sqlite/
 
 server:
   port: 8080
+  servlet:
+    context-path: "/api"
 
 ############## Sa-Token 配置 (文档: https://sa-token.cc) ##############
 sa-token:

@@ -36,7 +36,7 @@ dependencies {
 	implementation 'org.flywaydb:flyway-core:10.10.0'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
-	annotationProcessor group: 'io.github.linpeilie', name: 'mapstruct-plus-processor', version: '1.4.3'
+	implementation group: 'io.github.linpeilie', name: 'mapstruct-plus-spring-boot-starter', version: '1.4.3'
 
 	// Sa-Token 权限认证，在线文档：https://sa-token.cc
 	implementation 'cn.dev33:sa-token-spring-boot3-starter:1.38.0'
@@ -44,8 +44,9 @@ dependencies {
 	implementation 'cn.hutool:hutool-core:5.8.26'
 
 	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
+	annotationProcessor 'com.mybatis-flex:mybatis-flex-processor:1.9.5'
+	annotationProcessor group: 'io.github.linpeilie', name: 'mapstruct-plus-processor', version: '1.4.3'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
