@@ -1,6 +1,8 @@
 package top.demohiiiii.memos.workspace.domain;
 
+import com.mybatisflex.annotation.Column;
 import com.mybatisflex.annotation.Table;
+import com.mybatisflex.core.handler.JacksonTypeHandler;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,9 +21,10 @@ public class WorkspaceSetting implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    private String name;
+    private WorkspaceSettingKey name;
 
-    private String value;
+    @Column(typeHandler = JacksonTypeHandler.class)
+    private WorkspaceSettingValue value;
 
     private String description;
 

@@ -1,4 +1,4 @@
-package top.demohiiiii.memos.memo;
+package top.demohiiiii.memos.memo.domain;
 
 import com.mybatisflex.annotation.Table;
 import lombok.AllArgsConstructor;

@@ -1,5 +1,6 @@
-package top.demohiiiii.memos.memo;
+package top.demohiiiii.memos.memo.domain;
 
+import com.mybatisflex.annotation.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,9 +13,16 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MemoPayload implements Serializable {
+@Table(value = "memo_relation")
+public class MemoRelation implements Serializable {
+
     @Serial
     private static final long serialVersionUID = 1L;
 
-    private Property property;
+    private Integer memoId;
+
+    private Integer relatedMemoId;
+
+    private MemoRelationType type;
+
 }

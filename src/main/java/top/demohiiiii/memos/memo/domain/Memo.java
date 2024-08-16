@@ -1,4 +1,4 @@
-package top.demohiiiii.memos.memo;
+package top.demohiiiii.memos.memo.domain;
 
 import com.mybatisflex.annotation.Id;
 import com.mybatisflex.annotation.Table;
@@ -10,7 +10,6 @@ import top.demohiiiii.memos.common.RowStatus;
 
 import java.io.Serial;
 import java.io.Serializable;
-import java.math.BigInteger;
 
 @Data
 @Builder

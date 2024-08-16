@@ -37,6 +37,11 @@ public class ResourceName {
         return tokens;
     }
 
+    public static String extractWorkspaceSettingKeyFromName(String name) {
+        List<String> tokens = getNameParentTokens(name, WorkspaceSettingNamePrefix);
+        return tokens.getFirst();
+    }
+
     public static long extractActivityIDFromName(String name){
         List<String> tokens = getNameParentTokens(name, ActivityNamePrefix);
         return Long.parseLong(tokens.getFirst());
