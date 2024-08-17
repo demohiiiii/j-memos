@@ -1,5 +1,6 @@
 package top.demohiiiii.memos.memo;
 
+import io.github.linpeilie.annotations.AutoMapper;
 import lombok.Data;
 import top.demohiiiii.memos.common.RowStatus;
 import top.demohiiiii.memos.memo.domain.Visibility;
@@ -7,6 +8,7 @@ import top.demohiiiii.memos.memo.domain.Visibility;
 import java.util.List;
 
 @Data
+@AutoMapper(target = FindMemo.class)
 public class MemoFilter {
     private List<String> contentSearch;
     private List<Visibility> visibilities;

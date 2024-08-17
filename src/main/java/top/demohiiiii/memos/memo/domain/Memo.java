@@ -1,27 +1,8 @@
 package top.demohiiiii.memos.memo.domain;
 
-import com.mybatisflex.annotation.Id;
-import com.mybatisflex.annotation.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import top.demohiiiii.memos.common.RowStatus;
 
-import java.io.Serial;
-import java.io.Serializable;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-@Table(value = "memo")
-public class Memo implements Serializable {
-
-    @Serial
-    private static final long serialVersionUID = 1L;
-
-    @Id
+public class Memo {
     private Integer id;
 
     private String uid;
@@ -42,4 +23,7 @@ public class Memo implements Serializable {
 
     private String payload;
 
+    boolean pinned;
+
+    Integer parentId;
 }

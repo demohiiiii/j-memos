@@ -1,5 +1,6 @@
 package top.demohiiiii.memos.memo;
 
+import lombok.Builder;
 import lombok.Data;
 import top.demohiiiii.memos.common.RowStatus;
 import top.demohiiiii.memos.memo.domain.Visibility;
@@ -7,6 +8,7 @@ import top.demohiiiii.memos.memo.domain.Visibility;
 import java.util.List;
 
 @Data
+@Builder
 public class FindMemo {
     private Integer id;
     private String uid;
